@@ -35,9 +35,9 @@ button{
     margin: 10px;
     border-radius: 8px;
     border: none;
-    background-color: #0d630d;
+    background-color: #27c727;
 }
 
 button:hover{
-    background-color: #27c727;
+    background-color: #0d630d;
 }
