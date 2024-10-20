@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+
+        }
+        .nav-items{
+            
+        }
+        nav{
+            border-radius: 8px;
+        }
+        nav ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            border: none;
+        }
+        nav ul li{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        li a{
+            text-decoration: none;
+            padding: 20px;
+            margin-bottom: 2px;
+            border-radius: 10px;
+            position: relative;
+        }
+        li a:hover{
+            background-color: #fff;
+            color: #1e1e1e;
+        }
+        li a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #e21515;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        a:hover::after{
+            transform: scaleX(1);
+        }
+        .card-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: #d41e1e;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #1e1e1e;
+            background-color: #aa8484;
+        }
+        footer div{
+            margin-top: 20px;
+            height: 40px;
+            background-color: #aa8484;
+        }
+        footer div *{
+            background-color: #aa8484;
+            color: #1e1e1e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Logo</h3>
+        </div>
+        <div class="nav-items">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="icon"></div>
+    </header>
+
+    <section>
+        <div class="hero">
+            <img width="100%" src="./bg-image.jpg" alt="Hero-Image">
+        </div>
+    </section>
+    <section class="card-container">
+        <div class="box box1">First-Card</div>
+        <div class="box box2">Second-Card</div>
+        <div class="box box3">Third-Card</div>
+    </section>
+
+    <footer>
+        <div><h4>Copyright @ Suhel Khan</h4></div>
+        <div>
+           <p> All right reserved</p>
+        </div>
+        <div>
+            <p>Like it!</p>
+        </div>
+    </footer>
+</body>
+</html>
